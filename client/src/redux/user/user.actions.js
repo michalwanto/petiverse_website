@@ -24,8 +24,9 @@ export const checkCurrentUser = () => ({
   type: UserActionTypes.CHECK_CURRENT_USER,
 });
 
-export const signOutStart = () => ({
+export const signOutStart = (cartItems) => ({
   type: UserActionTypes.SIGN_OUT_START,
+  payload: cartItems,
 });
 
 export const signOutSuccess = () => ({

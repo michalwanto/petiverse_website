@@ -35,6 +35,11 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         ...state,
         cartItems: [],
       };
+    case CartActionTypes.FETCH_CART_ITEMS_FROM_FIRESTORE_SUCCESS:
+      return {
+        ...state,
+        cartItems: action.payload,
+      };
     default:
       return state;
   }

@@ -18,6 +18,9 @@ import {
   signUpFailure,
 } from "./user.actions";
 
+import { addCartToFirestoreAsync } from "../cart/cart.sagas";
+import { fetchCartItemsFromFirestoreStart } from "../cart/cart.actions";
+
 export function* getSnapshotFromUserAuth(userAuth, additionalData) {
   try {
     const userRef = yield call(
@@ -27,13 +30,15 @@ export function* getSnapshotFromUserAuth(userAuth, additionalData) {
     );
     const snapshot = yield userRef.get();
     yield put(signInSuccess({ id: snapshot.id, ...snapshot.data() }));
+    yield put(fetchCartItemsFromFirestoreStart());
   } catch (error) {
     yield put(signInFailure(error));
   }
 }
 
-export function* signOut() {
+export function* signOut(cartItems) {
   try {
+    yield addCartToFirestoreAsync(cartItems);
     yield auth.signOut();
     yield put(signOutSuccess());
   } catch (error) {
