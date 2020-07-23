@@ -72,6 +72,34 @@ export const convertCollectionsSnapshotToMap = (collections) => {
   }, {});
 };
 
+export const convertTokenDataToDataArray = (data) => {
+  const unixTime = new Date(data.token.created * 1000);
+  const time = unixTime.toLocaleString();
+  const dataArray = () => ({
+    id: data.token.id,
+    email: data.token.email,
+    itemsPurchased: data.purchasedItems,
+    time: time,
+    addresses: {
+      city: data.token.card.address_city,
+      country: data.token.card.address_country,
+      address_line1: data.token.card.address_line1,
+      address_line1_check: data.token.address_line1_check,
+      address_line2: data.token.card.address_line2,
+      state: data.token.card.address_state,
+      zip: data.token.card.address_zip,
+      zip_check: data.token.card.address_zip_check,
+      country: data.token.card.country,
+    },
+    card: {
+      brand: data.token.card.brand,
+      funding: data.token.card.funding,
+    },
+  });
+
+  return dataArray();
+};
+
 export const getCurrentUser = () => {
   return new Promise((resolve, reject) => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {

@@ -41,3 +41,8 @@ export const fetchCartItemsFromFirestoreFailure = (error) => ({
   type: CartActionTypes.FETCH_CART_ITEMS_FROM_FIRESTORE_FAILURE,
   payload: error,
 });
+
+export const addCartToAdminStart = ({ cartItems, token }) => ({
+  type: CartActionTypes.ADD_CART_TO_ADMIN_START,
+  payload: { cartItems, token },
+});

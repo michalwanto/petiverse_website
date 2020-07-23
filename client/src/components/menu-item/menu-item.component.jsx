@@ -14,8 +14,6 @@ import {
 gsap.registerPlugin(Draggable);
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => {
-  const menuItem = React.createRef();
-
   useEffect(() => {
     Draggable.create(".content");
   });

@@ -8,11 +8,28 @@ import {
   clearCart,
   fetchCartItemsFromFirestoreSuccess,
   fetchCartItemsFromFirestoreFailure,
+  addCartToAdminStart,
 } from "./cart.actions";
 import CartActionTypes from "./cart.types";
 
 export function* clearCartOnSignOutSuccess() {
   yield put(clearCart());
+}
+
+export function* addCartToAdminFirestoreAsync({
+  payload: { cartItems, token },
+}) {
+  try {
+    const userRef = yield firestore.doc(`admin/customers/orders/${token.id}`);
+    const snapshot = yield userRef.get();
+    yield userRef.set({
+      ...snapshot.data(),
+      purchasedItems: cartItems,
+      token: token,
+    });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 export function* addCartToFirestoreAsync({ payload: items }) {
@@ -60,10 +77,18 @@ export function* onFetchCartItemsFromFirestoreStart() {
   );
 }
 
+export function* onAddCartToAdminFirestoreAsync() {
+  yield takeLatest(
+    CartActionTypes.ADD_CART_TO_ADMIN_START,
+    addCartToAdminFirestoreAsync
+  );
+}
+
 export function* cartSagas() {
   yield all([
     call(onSignOutSuccess),
     call(onAddCartToFirestoreStart),
     call(onFetchCartItemsFromFirestoreStart),
+    call(onAddCartToAdminFirestoreAsync),
   ]);
 }

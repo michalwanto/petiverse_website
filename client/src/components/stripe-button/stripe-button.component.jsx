@@ -2,13 +2,17 @@ import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 
-const StripeCheckoutButton = ({ price }) => {
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCartItems } from "../../redux/cart/cart.selectors";
+import { addCartToAdminStart } from "../../redux/cart/cart.actions";
+
+const StripeCheckoutButton = ({ price, cartItems, addCartToAdminStart }) => {
   const priceForStripe = price * 100;
   const publishableKey =
-    "pk_test_51H1v3eDwIwtpSHLmeJHly8vs5meReOCmG0mAA9ZR96NQ4Qx4DNf833b0yg6VnuV3DtfObp2hssXTasQvRpWiPskl00gzAH8YHv";
+    "pk_test_51Fj8tREh1LbLp58TzJsVxn42WbhQkn5aZYYt0rtUJnMNoO0rYkMOE8Pq7wsFi4gswhmL7ljGLQvgjbzyVfLKuQmg00tNBg7hbg";
 
   const onToken = (token) => {
-    debugger;
     axios({
       url: "payment",
       method: "post",
@@ -19,6 +23,8 @@ const StripeCheckoutButton = ({ price }) => {
     })
       .then((response) => {
         alert("Payment Successful");
+        console.log(cartItems);
+        addCartToAdminStart({ cartItems, token });
       })
       .catch((error) => {
         console.log("Payment Error: ", JSON.parse(error));
@@ -38,8 +44,21 @@ const StripeCheckoutButton = ({ price }) => {
       panelLabel="Pay Now"
       token={onToken}
       stripeKey={publishableKey}
+      shippingAddress
     />
   );
 };
 
-export default StripeCheckoutButton;
+const mapStateToProps = createStructuredSelector({
+  cartItems: selectCartItems,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  addCartToAdminStart: ({ cartItems, token }) =>
+    dispatch(addCartToAdminStart({ cartItems, token })),
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(StripeCheckoutButton);

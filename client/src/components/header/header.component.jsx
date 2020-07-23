@@ -35,9 +35,6 @@ const Header = ({
     <OptionsContainer>
       <OptionLink to="/shop">SHOP</OptionLink>
       <OptionLink to="/shop">CONTACT</OptionLink>
-      <OptionLink as="div" onClick={() => fetchCartItemsFromFirestoreStart()}>
-        addCartDbt
-      </OptionLink>
       {currentUser ? (
         <OptionLink as="div" onClick={() => signOutStart(cartItems)}>
           SIGN OUT
