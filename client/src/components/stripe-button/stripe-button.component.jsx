@@ -24,7 +24,7 @@ const StripeCheckoutButton = ({ price, cartItems, addCartToAdminStart }) => {
       .then(async (response) => {
         alert("Payment Successful");
         console.log(cartItems);
-        await addCartToAdminStart({ cartItems, token });
+        // await addCartToAdminStart({ cartItems, token });
       })
       .catch((error) => {
         console.log("Payment Error: ", JSON.parse(error));
