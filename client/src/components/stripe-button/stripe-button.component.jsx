@@ -2,10 +2,6 @@ import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
-import { selectCartItems } from "../../redux/cart/cart.selectors";
-import { addCartToAdminStart } from "../../redux/cart/cart.actions";
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
   const publishableKey =
@@ -46,16 +42,4 @@ const StripeCheckoutButton = ({ price }) => {
   );
 };
 
-const mapStateToProps = createStructuredSelector({
-  cartItems: selectCartItems,
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  addCartToAdminStart: ({ cartItems, token }) =>
-    dispatch(addCartToAdminStart({ cartItems, token })),
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(StripeCheckoutButton);
+export default StripeCheckoutButton;
