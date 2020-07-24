@@ -44,7 +44,6 @@ const StripeCheckoutButton = ({ price, cartItems, addCartToAdminStart }) => {
       panelLabel="Pay Now"
       token={onToken}
       stripeKey={publishableKey}
-      shippingAddress
     />
   );
 };
