@@ -10,6 +10,7 @@ import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import AdminPage from "./pages/admin/admin.component";
+import ClothingPage from "./pages/clothing/clothingPage.component";
 
 import Header from "./components/header/header.component";
 
@@ -36,6 +37,7 @@ const App = ({ checkCurrentUser, currentUser }) => {
           }
         />
         <Route path="/admin" component={AdminPage} />
+        <Route path="/clothing" component={ClothingPage} />
       </Switch>
     </div>
   );

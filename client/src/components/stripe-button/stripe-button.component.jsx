@@ -6,13 +6,13 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCartItems } from "../../redux/cart/cart.selectors";
 import { addCartToAdminStart } from "../../redux/cart/cart.actions";
-
-const StripeCheckoutButton = ({ price, cartItems, addCartToAdminStart }) => {
+const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
   const publishableKey =
     "pk_test_51Fj8tREh1LbLp58TzJsVxn42WbhQkn5aZYYt0rtUJnMNoO0rYkMOE8Pq7wsFi4gswhmL7ljGLQvgjbzyVfLKuQmg00tNBg7hbg";
 
   const onToken = (token) => {
+    console.log("payment is succcesful");
     axios({
       url: "payment",
       method: "post",
@@ -21,10 +21,8 @@ const StripeCheckoutButton = ({ price, cartItems, addCartToAdminStart }) => {
         token,
       },
     })
-      .then(async (response) => {
+      .then((response) => {
         alert("Payment Successful");
-        console.log(cartItems);
-        // await addCartToAdminStart({ cartItems, token });
       })
       .catch((error) => {
         console.log("Payment Error: ", JSON.parse(error));
