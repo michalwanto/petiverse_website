@@ -10,7 +10,9 @@ import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import AdminPage from "./pages/admin/admin.component";
-import ClothingPage from "./pages/clothing/clothingPage.component";
+import ClothingPage from "./pages/clothing/clothing-page.component";
+import ProductsPage from "./pages/products/products-page.component";
+import WebGlPage from "./pages/webglpage/webglpage.component";
 
 import Header from "./components/header/header.component";
 
@@ -38,6 +40,8 @@ const App = ({ checkCurrentUser, currentUser }) => {
         />
         <Route path="/admin" component={AdminPage} />
         <Route path="/clothing" component={ClothingPage} />
+        <Route path="/products" component={ProductsPage} />
+        <Route path="/webGlPage" component={WebGlPage} />
       </Switch>
     </div>
   );

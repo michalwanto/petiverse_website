@@ -1,11 +1,14 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutPageContainer = styled.div`
-  width: 55%;
+  width: 100%;
   min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  justify-items: center;
+
   margin: 50px auto 0;
 
   button {
@@ -13,7 +16,14 @@ export const CheckoutPageContainer = styled.div`
     margin-top: 50px;
   }
 `;
+export const CheckoutItemsSummary = styled.div`
+  width: 80%;
+  display: grid;
+`;
 
+export const PaymentDetailsEntry = styled.div`
+  display: flex;
+`;
 export const CheckoutHeaderContainer = styled.div`
   width: 100%;
   height: 40px;
