@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { withRouter } from "react-router-dom";
 import styled from "@emotion/styled";
 import axios from "axios";
 
@@ -20,7 +21,7 @@ const CardElementContainer = styled.div`
   }
 `;
 
-const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
+const CheckoutForm = ({ price, onSuccessfulCheckout, history }) => {
   const [isProcessing, setProcessingTo] = useState(false);
   const [checkoutError, setCheckoutError] = useState();
   const stripe = useStripe();
@@ -65,6 +66,11 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
     });
 
     console.log(confirmedCardPayment);
+
+    const loadSuccesPage = () => {
+      history.push("/successPage");
+    };
+    loadSuccesPage();
   };
 
   const cardElementOptions = {
@@ -104,4 +110,4 @@ const CheckoutForm = ({ price, onSuccessfulCheckout }) => {
   );
 };
 
-export default CheckoutForm;
+export default withRouter(CheckoutForm);
