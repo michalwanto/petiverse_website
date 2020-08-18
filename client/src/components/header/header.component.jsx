@@ -19,8 +19,6 @@ import ham from "../../assets/ham.svg";
 import delivery from "../../assets/delivery.svg";
 import cart from "../../assets/cart.svg";
 
-import "./header.styles.scss";
-
 const Header = ({
   currentUser,
   hidden,
