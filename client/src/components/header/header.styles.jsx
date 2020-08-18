@@ -1,5 +1,9 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { ReactComponent as ShoppingIconSVG } from "../../assets/shopping-bag.svg";
+import { ReactComponent as Hamburger } from "../../assets/ham.svg";
+import { ReactComponent as Delivery } from "../../assets/delivery.svg";
+import { ReactComponent as Cart } from "../../assets/cart.svg";
 
 export const HeaderContainer = styled.div`
   height: 70px;
@@ -9,21 +13,18 @@ export const HeaderContainer = styled.div`
   margin-bottom: 25px;
 `;
 
-export const LogoContainer = styled(Link)`
+export const LinkContainer = styled(Link)`
   height: 100%;
   width: 70px;
   padding: 25px;
 `;
 
-export const OptionsContainer = styled.div`
-  width: 50%;
-  height: 100%;
+export const CartContainer = styled.div`
+  width: 45px;
+  height: 45px;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-`;
-
-export const OptionLink = styled(Link)`
-  padding: 10px 15px;
+  justify-content: center;
   cursor: pointer;
 `;
