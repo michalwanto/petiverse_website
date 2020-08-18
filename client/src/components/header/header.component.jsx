@@ -19,7 +19,7 @@ import ham from "../../assets/ham.svg";
 import delivery from "../../assets/delivery.svg";
 import cart from "../../assets/cart.svg";
 
-import "./header.styles.scss";
+import "./header.styles.css";
 
 const Header = ({
   currentUser,
