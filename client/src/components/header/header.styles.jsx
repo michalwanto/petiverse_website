@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { ReactComponent as ShoppingIconSVG } from "../../assets/shopping-bag.svg";
-import { ReactComponent as Hamburger } from "../../assets/ham.svg";
-import { ReactComponent as Delivery } from "../../assets/delivery.svg";
-import { ReactComponent as Cart } from "../../assets/cart.svg";
 
 export const HeaderContainer = styled.div`
   height: 70px;
