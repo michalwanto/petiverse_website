@@ -10,7 +10,6 @@ import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import AdminPage from "./pages/admin/admin.component";
-
 import ProductsPage from "./pages/products/products-page.component";
 import WebGlPage from "./pages/webglpage/webglpage.component";
 import SuccessPage from "./pages/success/success.component";
