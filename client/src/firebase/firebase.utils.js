@@ -3,14 +3,14 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyBvZ61AUwIC6D88qe-2OAUmFVXp_B89TyM",
-  authDomain: "lesson-26.firebaseapp.com",
-  databaseURL: "https://lesson-26.firebaseio.com",
-  projectId: "lesson-26",
-  storageBucket: "lesson-26.appspot.com",
-  messagingSenderId: "644912221434",
-  appId: "1:644912221434:web:b106b7926f4d597d924d43",
-  measurementId: "G-1JYRY7CM73",
+  apiKey: "AIzaSyDfn1mXew6yKQvoygbpMn6WvVEdCqjCQHY",
+  authDomain: "petiverse-f7288.firebaseapp.com",
+  databaseURL: "https://petiverse-f7288.firebaseio.com",
+  projectId: "petiverse-f7288",
+  storageBucket: "petiverse-f7288.appspot.com",
+  messagingSenderId: "229844084150",
+  appId: "1:229844084150:web:771624643eda3d66d1cd17",
+  measurementId: "G-J3QTND7BYY",
 };
 
 firebase.initializeApp(config);

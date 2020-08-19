@@ -1,25 +1,36 @@
 import styled from "styled-components";
 
-import { ReactComponent as ShoppingIconSVG } from "../../assets/shopping-bag.svg";
+import { ReactComponent as ShoppingIconSVG } from "../../assets/cart.svg";
 
 export const CartContainer = styled.div`
   width: 45px;
   height: 45px;
-  position: relative;
-  display: flex;
+
   align-items: center;
   justify-content: center;
   cursor: pointer;
 `;
 
 export const ShoppingIcon = styled(ShoppingIconSVG)`
-  width: 24px;
-  height: 24px;
+  position: absolute;
+  width: 29.85px;
+  height: 29.15px;
+  right: 63.16px;
+  top: 38.18px;
 `;
 
 export const ItemCountContainer = styled.span`
   position: absolute;
-  font-size: 10px;
+  width: 13px;
+  height: 9px;
+  right: 67.66px;
+  top: 47.11px;
+
+  font-family: TS Block;
+  font-style: normal;
   font-weight: bold;
-  bottom: 12px;
+  font-size: 9px;
+  line-height: 10px;
+
+  color: #000000;
 `;

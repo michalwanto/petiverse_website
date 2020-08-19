@@ -35,9 +35,7 @@ const Header = ({
     <LinkContainer to="/">
       <img src={logo} className="logo" />
     </LinkContainer>
-    <LinkContainer to="/checkout">
-      <img src={cart} className="cart" />
-    </LinkContainer>
+
     <LinkContainer to="/">
       <img src={delivery} className="delivery" />
     </LinkContainer>

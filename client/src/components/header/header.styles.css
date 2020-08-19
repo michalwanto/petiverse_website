@@ -10,6 +10,22 @@
   position: absolute;
   width: 196.43px;
   height: 40.95px;
-  left: calc(50% - 196.43px / 2 - 464.01px);
+  left: 104.12px;
+  top: 32.62px;
+}
+
+.logo {
+  position: absolute;
+  width: 94px;
+  height: 90px;
+  left: calc(50% - 102.03px / 2 - 0px);
+  top: 32.62px;
+}
+
+.cart {
+  position: absolute;
+  width: 29.85px;
+  height: 29.15px;
+  right: 63.16px;
   top: 32.62px;
 }
