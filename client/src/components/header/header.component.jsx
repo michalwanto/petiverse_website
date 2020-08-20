@@ -14,10 +14,10 @@ import { HeaderContainer, LinkContainer } from "./header.styles";
 
 import { signOutStart } from "../../redux/user/user.actions";
 
-import logo from "../../assets/logo.svg";
-import ham from "../../assets/ham.svg";
-import delivery from "../../assets/delivery.svg";
-import cart from "../../assets/cart.svg";
+import logo from "../../assets/header/logo.svg";
+import ham from "../../assets/header/ham.svg";
+import delivery from "../../assets/header/delivery.svg";
+import cart from "../../assets/header/cart.svg";
 
 import "./header.styles.css";
 

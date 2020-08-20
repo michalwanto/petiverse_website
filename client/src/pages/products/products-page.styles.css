@@ -1,0 +1,49 @@
+@font-face {
+  font-family: TS Block;
+  src: url("../../assets/fonts/TS_Block.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: Bahnschrift;
+  src: url("../../assets/fonts/BAHNSCHRIFT.TTF");
+}
+
+h1 {
+  font-family: TS Block;
+  position: absolute;
+  width: 382.46px;
+  height: 55.53px;
+  left: 469.91px;
+  top: 151.32px;
+}
+
+h2 {
+  font-family: Bahnschrift;
+  font-size: 13.8822px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+  position: absolute;
+  width: 242.24px;
+  height: 16.66px;
+  left: 547.65px;
+  top: 201.99px;
+}
+
+.fur {
+  position: absolute;
+  width: 410.91px;
+  height: 504.76px;
+  left: calc(50% - 410.91px / 2 - 78.43px);
+  top: 343.86px;
+}
+
+.front_pink_big {
+  position: absolute;
+  width: 111.06px;
+  height: 508.78px;
+  left: calc(50% - 111.06px / 2 - 4.86px);
+  top: 313.75px;
+}
