@@ -14,7 +14,7 @@ h1 {
   position: absolute;
   width: 382.46px;
   height: 55.53px;
-  left: 469.91px;
+  left: calc(50% - 382.46px / 2 - 5.2px);
   top: 151.32px;
 }
 
@@ -28,9 +28,11 @@ h2 {
   position: absolute;
   width: 242.24px;
   height: 16.66px;
-  left: 547.65px;
+  left: calc(50% - 242.24px / 2 + 2.43px);
   top: 201.99px;
 }
+
+/* files in frebase storage */
 
 .fur {
   position: absolute;
@@ -47,3 +49,147 @@ h2 {
   left: calc(50% - 111.06px / 2 - 4.86px);
   top: 313.75px;
 }
+
+.highlights_top_blue {
+  position: absolute;
+  width: 403.28px;
+  height: 397.03px;
+  left: calc(50% - 403.28px / 2 - 432.08px);
+  top: calc(50% - 397.03px / 2 - 9.25px);
+}
+
+.highlights_spin_pink {
+  position: absolute;
+  width: 403.97px;
+  height: 400.5px;
+  left: calc(50% - 403.97px / 2 - 4.16px);
+  top: 952.79px;
+}
+
+.highlights_pull_blue {
+  position: absolute;
+  width: 411.61px;
+  height: 397.03px;
+  left: calc(50% - 411.61px / 2 + 427.92px);
+  top: calc(50% - 397.03px / 2 - 5.78px);
+}
+.sofa {
+  position: absolute;
+  width: 762.13px;
+  height: 410.22px;
+  left: calc(50% - 762.13px / 2 - 38.18px);
+  bottom: 234.14px;
+}
+
+.desc1 {
+  position: absolute;
+  width: 535.85px;
+  height: 73.58px;
+  left: calc(50% - 535.85px / 2 - 365.8px);
+  top: 1381.05px;
+}
+
+.desc2 {
+  position: absolute;
+  width: 535.85px;
+  height: 73.58px;
+  left: calc(50% - 535.85px / 2 + 105.5px);
+  top: 1381.05px;
+}
+
+.dragrollblue {
+  position: absolute;
+  width: 24.99px;
+  height: 110.36px;
+  left: calc(50% - 24.99px / 2 - 446.31px);
+  bottom: 577.73px;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+.dragrollpink {
+  position: absolute;
+  width: 24.99px;
+  height: 110.36px;
+  left: calc(50% - 24.99px / 2 - 400.5px);
+  bottom: 577.73px;
+
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+}
+
+/* files in local files */
+
+.backButton {
+  position: absolute;
+  width: 35.4px;
+  height: 47.89px;
+  left: 61.08px;
+  top: 422.02px;
+}
+
+.addToCartLong {
+  position: absolute;
+  height: 29.15px;
+  left: 75.78%;
+  right: 7.86%;
+  top: calc(50% - 29.15px / 2 - 611.51px);
+  cursor: pointer;
+}
+.addToCart {
+  position: absolute;
+  width: 56.92px;
+  height: 75.66px;
+  right: 83.99px;
+  bottom: 486.57px;
+}
+
+.inStock {
+  position: absolute;
+  width: 106px;
+  height: 17px;
+  left: calc(50% - 106px / 2 + 20.65px);
+  top: 230px;
+}
+
+.likeIcon {
+  position: absolute;
+  width: 32.62px;
+  height: 32.62px;
+  left: 962.73px;
+  top: 530.99px;
+}
+.paymentDesc {
+  position: absolute;
+  width: 342.2px;
+  height: 79.82px;
+  left: 957.87px;
+  top: 426.88px;
+}
+
+.dog {
+  position: absolute;
+  width: 268.93px;
+  height: 346.36px;
+  right: 0;
+  top: 1232.51px;
+}
+.dragme {
+  position: absolute;
+  width: 134px;
+  height: 31.23px;
+  left: calc(50% - 24.99px / 2 - 360px);
+  top: 1633px;
+}
+
+/* <img className="dog" src={dog} />
+      <img className="dragme" src={dragme} />
+      <img className="ellipseblue" src={ellipseblue} />
+      <img className="ellipsepink" src={ellipsepink} />
+      <img className="pawprint" src={pawprint} />
+      <img className="sayings " src={sayings} />*/
