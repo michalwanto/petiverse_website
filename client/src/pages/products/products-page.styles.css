@@ -12,24 +12,59 @@
 h1 {
   font-family: TS Block;
   position: absolute;
-  width: 382.46px;
-  height: 55.53px;
-  left: calc(50% - 382.46px / 2 - 5.2px);
-  top: 151.32px;
 }
 
 h2 {
+  position: absolute;
+  width: 242.24px;
+  height: 16.66px;
+  left: calc(50% - 242.24px / 2 + 2.43px);
+  top: 201.99px;
+
   font-family: Bahnschrift;
   font-size: 13.8822px;
   line-height: 16px;
   /* identical to box height */
 
   letter-spacing: 0.1em;
+}
+
+.title {
   position: absolute;
-  width: 242.24px;
-  height: 16.66px;
-  left: calc(50% - 242.24px / 2 + 2.43px);
-  top: 201.99px;
+  width: 382.46px;
+  height: 55.53px;
+  left: 469.91px;
+  top: 130.32px;
+
+  font-family: TS Block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48.5878px;
+  line-height: 56px;
+}
+
+.seeHowItWorks {
+  position: absolute;
+  width: 751.03px;
+  height: 55.53px;
+  left: calc(50% - 751.03px / 2 + 19.44px);
+  bottom: 560px;
+
+  font-family: TS Block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48.5878px;
+  line-height: 56px;
+}
+
+.subtittle {
+}
+
+.rollerPage {
+  position: relative;
+  width: 1332.69px;
+  height: 2321.11px;
+  top: -100px;
 }
 
 /* files in frebase storage */
@@ -174,10 +209,10 @@ h2 {
 
 .dog {
   position: absolute;
-  width: 268.93px;
-  height: 346.36px;
-  right: 0;
-  top: 1232.51px;
+  width: 272.93px;
+  height: 438px;
+  right: 0px;
+  top: 1187px;
 }
 .dragme {
   position: absolute;
@@ -185,6 +220,57 @@ h2 {
   height: 31.23px;
   left: calc(50% - 24.99px / 2 - 360px);
   top: 1633px;
+}
+.ellipseblue {
+  position: absolute;
+  width: 882.34px;
+  height: 851.91px;
+  left: -524.18px;
+  top: calc(50% - 851.91px / 2 - 131.88px);
+}
+.ellipsepink {
+  position: absolute;
+  width: 882.34px;
+  height: 851.91px;
+  right: 0;
+  top: 1473.37px;
+}
+.sayings {
+  position: absolute;
+  width: 250;
+  height: 150px;
+  right: 170.17px;
+  top: calc(50% - 80.52px / 2 + 240.05px);
+}
+
+.pawprint {
+  position: absolute;
+  width: 619.49px;
+  height: 297.77px;
+  right: 0px;
+  top: 1943.76px;
+}
+.fur1 {
+  position: absolute;
+  width: 70.11px;
+  height: 145.76px;
+  left: calc(50% - 70.11px / 2 + 264.11px);
+  bottom: 375.05px;
+}
+.fur2 {
+  position: absolute;
+  width: 112.45px;
+  height: 138.13px;
+  left: calc(50% - 112.45px / 2 - 177.69px);
+  bottom: 439.6px;
+}
+
+.backButton2 {
+  position: absolute;
+  width: 52.06px;
+  height: 64.55px;
+  left: 43.03px;
+  bottom: 482.41px;
 }
 
 /* <img className="dog" src={dog} />

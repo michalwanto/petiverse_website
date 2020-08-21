@@ -18,6 +18,8 @@ import ellipseblue from "../../assets/decor/ellipseblue.svg";
 import ellipsepink from "../../assets/decor/ellipsepink.svg";
 import pawprint from "../../assets/decor/pawprint.svg";
 import sayings from "../../assets/decor/sayings.svg";
+import fur1 from "../../assets/decor/fur1.png";
+import fur2 from "../../assets/decor/fur2.png";
 
 gsap.registerPlugin(Draggable);
 
@@ -26,9 +28,14 @@ const ProductsPage = () => {
     Draggable.create(".draggable");
   });
   return (
-    <div>
-      <h1>FUR AWAY</h1>
+    <div className="rollerPage">
+      <h1 className="title">FUR AWAY</h1>
       <h2>Ultimate Portable Pet Fur Roller</h2>
+      <h1 className="seeHowItWorks">SEE HOW IT WORKS</h1>
+
+      <img className="ellipseblue" src={ellipseblue} />
+      <img className="ellipsepink" src={ellipsepink} />
+
       <img
         className="fur"
         src={
@@ -59,7 +66,6 @@ const ProductsPage = () => {
           "https://firebasestorage.googleapis.com/v0/b/petiverse-f7288.appspot.com/o/shop%2Fcollection%2Fcleaning%20%2Frollers%2Fhighlights%2Fhighlights_pull_blue.png?alt=media&token=437a3a84-758b-4b6b-a224-9afd0b9a59e3"
         }
       />
-
       <img
         className="desc1"
         src={
@@ -90,20 +96,20 @@ const ProductsPage = () => {
           "https://firebasestorage.googleapis.com/v0/b/petiverse-f7288.appspot.com/o/shop%2Fcollection%2Fcleaning%20%2Frollers%2Fdraggable%2Frollerpink.svg?alt=media&token=c8f5d4c6-34f8-40cb-91e1-1dee8d1bc984"
         }
       />
-
       <img className="backButton" src={backButton} />
       <img className="addToCart" src={addToCart} />
       <img className="inStock" src={inStock} />
       <img className="likeIcon" src={likeIcon} />
       <img className="paymentDesc" src={paymentDesc} />
       <img className="addToCartLong" src={addToCartLong} />
-
       <img className="dog" src={dog} />
       <img className="dragme" src={dragme} />
-      <img className="ellipseblue" src={ellipseblue} />
-      <img className="ellipsepink" src={ellipsepink} />
+
       <img className="pawprint" src={pawprint} />
       <img className="sayings " src={sayings} />
+      <img className="fur1 " src={fur1} />
+      <img className="fur2 " src={fur2} />
+      <img className="backButton2" src={backButton} />
     </div>
   );
 };
