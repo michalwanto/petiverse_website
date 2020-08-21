@@ -15,6 +15,7 @@ import WebGlPage from "./pages/webglpage/webglpage.component";
 import SuccessPage from "./pages/success/success.component";
 
 import Header from "./components/header/header.component";
+import Footer from "./components/footer/footer.component";
 
 import { checkCurrentUser } from "./redux/user/user.actions";
 import { selectCurrentUser } from "./redux/user/user.selectors";
@@ -26,7 +27,6 @@ const App = ({ checkCurrentUser, currentUser }) => {
 
   return (
     <div>
-      {window.location.pathname === "/admin" ? null : <Header />}
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
@@ -43,6 +43,8 @@ const App = ({ checkCurrentUser, currentUser }) => {
         <Route path="/webGlPage" component={WebGlPage} />
         <Route path="/successPage" component={SuccessPage} />
       </Switch>
+      {window.location.pathname === "/admin" ? null : <Header />}
+      {window.location.pathname === "/admin" ? null : <Footer />}
     </div>
   );
 };

@@ -29,6 +29,12 @@ h2 {
   letter-spacing: 0.1em;
 }
 
+.rollerPage {
+  position: relative;
+  width: 1350.69px;
+  height: 2321.11px;
+}
+
 .title {
   position: absolute;
   width: 382.46px;
@@ -58,13 +64,6 @@ h2 {
 }
 
 .subtittle {
-}
-
-.rollerPage {
-  position: relative;
-  width: 1332.69px;
-  height: 2321.11px;
-  top: -100px;
 }
 
 /* files in frebase storage */
