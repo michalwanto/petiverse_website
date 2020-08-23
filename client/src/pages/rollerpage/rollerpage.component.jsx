@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { Draggable } from "gsap/Draggable";
 
-import "./products-page.styles.css";
+import "./rollerpage.styles.css";
 import { urlencoded } from "body-parser";
 
 import backButton from "../../assets/decor/back.svg";
@@ -23,13 +23,13 @@ import fur2 from "../../assets/decor/fur2.png";
 
 gsap.registerPlugin(Draggable);
 
-const ProductsPage = () => {
+const RollerPage = () => {
   useEffect(() => {
     Draggable.create(".draggable");
   });
   return (
     <div className="rollerPage">
-      <h1 className="title">FUR AWAY</h1>
+      <h1 className="rollerTitle">FUR AWAY</h1>
       <h2>Ultimate Portable Pet Fur Roller</h2>
       <h1 className="seeHowItWorks">SEE HOW IT WORKS</h1>
 
@@ -114,4 +114,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default RollerPage;

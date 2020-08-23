@@ -8,9 +8,10 @@ import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
+import CheckoutPage1 from "./pages/checkout1/checkout1.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import AdminPage from "./pages/admin/admin.component";
-import ProductsPage from "./pages/products/products-page.component";
+import RollerPage from "./pages/rollerpage/rollerpage.component";
 import WebGlPage from "./pages/webglpage/webglpage.component";
 import SuccessPage from "./pages/success/success.component";
 
@@ -30,7 +31,7 @@ const App = ({ checkCurrentUser, currentUser }) => {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
-        <Route path="/checkout" component={CheckoutPage} />
+        <Route path="/checkout1" component={CheckoutPage1} />
         <Route
           exact
           path="/signin"
@@ -39,9 +40,10 @@ const App = ({ checkCurrentUser, currentUser }) => {
           }
         />
         <Route path="/admin" component={AdminPage} />
-        <Route path="/products" component={ProductsPage} />
+        <Route path="/roller" component={RollerPage} />
         <Route path="/webGlPage" component={WebGlPage} />
         <Route path="/successPage" component={SuccessPage} />
+        <Route path="/checkout" component={CheckoutPage} />
       </Switch>
       {window.location.pathname === "/admin" ? null : <Header />}
       {window.location.pathname === "/admin" ? null : <Footer />}

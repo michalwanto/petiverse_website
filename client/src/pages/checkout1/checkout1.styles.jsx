@@ -6,7 +6,7 @@ export const CheckoutPageContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  top:160px
+  top: 160px;
 
   justify-items: center;
 

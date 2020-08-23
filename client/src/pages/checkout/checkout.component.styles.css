@@ -1,0 +1,72 @@
+.CheckoutPageContainer {
+  position: relative;
+
+  height: 1359px;
+
+  background: #fbfbfb;
+}
+.PaidOrdersContainer {
+  position: absolute;
+  width: 236px;
+  height: 212px;
+  left: 978px;
+  top: 296px;
+}
+.itemImg {
+  width: 150px;
+  height: 200px;
+}
+
+.confirmTitle {
+  position: absolute;
+  width: 622.35px;
+  height: 39.64px;
+  left: calc(50% - 622.35px / 2 + 7.3px);
+  top: 166.19px;
+  margin: 0;
+
+  font-family: TS Block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34.7682px;
+  line-height: 40px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.confirmSubtitle {
+  position: absolute;
+  width: 316.39px;
+  height: 16.69px;
+  left: calc(50% - 316.39px / 2 - 145.68px);
+  top: 201.66px;
+  margin: 0;
+
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.9073px;
+  line-height: 17px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+.confirmTickIcon {
+  position: absolute;
+  width: 50.07px;
+  height: 48.68px;
+  left: calc(50% - 50.07px / 2 - 338.64px);
+  top: 173.15px;
+}
+
+.petiversePackage {
+  position: absolute;
+  width: 619.57px;
+  height: 634.87px;
+  right: -104.3px;
+  bottom: -27.12px;
+}
