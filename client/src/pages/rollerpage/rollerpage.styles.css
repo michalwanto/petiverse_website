@@ -16,10 +16,6 @@ h1 {
 
 h2 {
   position: absolute;
-  width: 242.24px;
-  height: 16.66px;
-  left: calc(50% - 242.24px / 2 + 2.28px);
-  top: 99.99px;
 
   font-family: Bahnschrift;
   font-size: 13.8822px;
@@ -45,6 +41,30 @@ h2 {
   left: calc(50% - 382.46px / 2 - 5.36px);
   top: 49.32px;
   margin: 0;
+
+  font-family: TS Block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48.5878px;
+  line-height: 56px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.rollerSubtitle {
+  width: 242.24px;
+  height: 16.66px;
+  left: calc(50% - 242.24px / 2 + 2.28px);
+  top: 99.99px;
+}
+
+.rollerPrice {
+  position: absolute;
+
+  height: 55.53px;
+  right: 115.56px;
+  top: 200.21px;
 
   font-family: TS Block;
   font-style: normal;
@@ -171,7 +191,7 @@ h2 {
   height: 29.15px;
   left: 75.78%;
   right: 7.86%;
-  top: calc(50% - 29.15px / 2 - 611.51px);
+  top: calc(50% - 29.15px / 2 - 595px);
   cursor: pointer;
 }
 .addToCart {
@@ -195,7 +215,8 @@ h2 {
   width: 32.62px;
   height: 32.62px;
   left: 962.73px;
-  top: calc(50% - 29.15px / 2 - 610px);
+  top: calc(50% - 29.15px / 2 - 595px);
+  cursor: pointer;
 }
 .paymentDesc {
   position: absolute;

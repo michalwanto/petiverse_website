@@ -20,6 +20,10 @@ import pawprint from "../../assets/decor/pawprint.svg";
 import sayings from "../../assets/decor/sayings.svg";
 import fur1 from "../../assets/decor/fur1.png";
 import fur2 from "../../assets/decor/fur2.png";
+import minus from "../../assets/decor/-.svg";
+import plus from "../../assets/decor/+.svg";
+
+import { MinusSign, PlusSign, Quantity } from "./rollerpage.styles";
 
 gsap.registerPlugin(Draggable);
 
@@ -30,8 +34,12 @@ const RollerPage = () => {
   return (
     <div className="rollerPage">
       <h1 className="rollerTitle">FUR AWAY</h1>
-      <h2>Ultimate Portable Pet Fur Roller</h2>
+      <h2 className="rollerSubtitle">Ultimate Portable Pet Fur Roller</h2>
+      <h1 className="rollerPrice">AUD 17</h1>
       <h1 className="seeHowItWorks">SEE HOW IT WORKS</h1>
+      <MinusSign src={minus} />
+      <Quantity>1</Quantity>
+      <PlusSign src={plus} />
 
       <img className="ellipseblue" src={ellipseblue} />
       <img className="ellipsepink" src={ellipsepink} />
