@@ -9,17 +9,20 @@
   height: 694px;
   left: 0px;
   top: 0px;
+  margin-bottom: 100px;
 }
 .PaidOrdersContainer {
-  position: absolute;
-  width: 236px;
-  height: 212px;
-  left: calc(50% - 164.11px / 2 + 130.57px);
-  top: 296px;
+  position: relative;
+  width: 318px;
+  height: 337px;
+  left: calc(50% - 318px / 2 + 159.5px);
+  top: 180px;
 }
 .itemImg {
-  width: 150px;
-  height: 200px;
+  width: 164.11px;
+  height: 147.42px;
+  left: calc(50% - 164.11px / 2 - 69.88px);
+  top: -16.17px;
 }
 
 .confirmTitle {
@@ -44,8 +47,9 @@
   position: absolute;
   width: 316.39px;
   height: 16.69px;
-  left: calc(50% - 316.39px / 2 - 145.68px);
-  top: 201.66px;
+  left: calc(50% - 316.39px / 2 - 145.63px);
+  top: 115.66px;
+
   margin: 0;
 
   font-family: Bahnschrift;
@@ -64,24 +68,23 @@
   position: absolute;
   width: 50.07px;
   height: 48.68px;
-  left: calc(50% - 50.07px / 2 - 338.64px);
-  top: 173.15px;
+  left: calc(50% - 50.07px / 2 - 338.59px);
+  top: 87.15px;
 }
 
 .petiversePackaging {
   position: absolute;
-  width: 619.57px;
-  height: 634.87px;
-  right: -104.3px;
-  bottom: -27.12px;
+  width: 371px;
+  height: 358px;
+  right: 25px;
+  bottom: -110px;
 }
 
 .referenceNumberTitle {
   position: absolute;
-
   height: 15.3px;
-  left: calc(50% - 153.68px / 2 - 280.58px);
-  top: 282.32px;
+  left: calc(50% - 153.68px / 2 - 280.53px);
+  top: 196.32px;
   margin: 0;
 
   font-family: FreightBigProBook-Regular;
@@ -99,8 +102,8 @@
   position: absolute;
   width: 274.67px;
   height: 58.41px;
-  left: calc(50% - 274.67px / 2 - 222.86px);
-  top: 300.4px;
+  left: calc(50% - 274.67px / 2 - 222.81px);
+  top: 214.4px;
   margin: 0;
 
   font-family: Bahnschrift;
@@ -120,7 +123,7 @@
   width: 236.42px;
   height: 116.82px;
   left: 310.13px;
-  top: 372.72px;
+  top: 286.72px;
 
   font-family: Bahnschrift;
   font-style: normal;
@@ -136,7 +139,8 @@
   position: absolute;
   height: 15.99px;
   left: 307.35px;
-  top: 699.54px;
+  top: 613.54px;
+
   border: none;
 
   font-family: TS Block;

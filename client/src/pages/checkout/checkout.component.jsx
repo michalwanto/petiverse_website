@@ -3,13 +3,15 @@ import "./checkout.component.styles.css";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import tickIcon from "../../assets/decor/tickIcon.svg";
-import petiversePackage from "../../assets/decor/petiversePackage.svg";
+import petiversePackaging from "../../assets/decor/petiversePackaging.svg";
 import pawPrint from "../../assets/decor/pawprint.svg";
 
 import {
   selectCartItems,
   selectCartTotal,
 } from "../../redux/cart/cart.selectors";
+
+import { CheckoutItemContainer, PawPrint } from "./checkout.styles.jsx";
 
 const CheckoutPage = (cartItems, cartTotal) => {
   return (
@@ -28,11 +30,13 @@ const CheckoutPage = (cartItems, cartTotal) => {
       <img className="confirmTickIcon" src={tickIcon}></img>
       <div className="PaidOrdersContainer">
         {cartItems.cartItems.map((item) => (
-          <img className="itemImg" src={item.imageUrl}></img>
+          <CheckoutItemContainer>
+            <img className="itemImg" src={item.imageUrl}></img>
+          </CheckoutItemContainer>
         ))}
       </div>
-      <img className="petiversePackaging" src={petiversePackage}></img>
-      <img className="pawPrint" src={pawPrint}></img>
+      <img className="petiversePackaging" src={petiversePackaging}></img>
+      <PawPrint></PawPrint>
     </div>
   );
 };

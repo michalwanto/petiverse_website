@@ -20,7 +20,6 @@ h3 {
   /* identical to box height */
 
   color: #fbfbfb;
-  cursor: pointer;
 }
 
 .send {
@@ -71,6 +70,7 @@ h3 {
   height: 11.8px;
   left: calc(50% - 44.42px / 2 - 61.08px);
   bottom: 104.34px;
+  cursor: pointer;
 }
 
 .facebook {
@@ -79,6 +79,7 @@ h3 {
   height: 11.8px;
   left: calc(50% - 42.34px / 2 - 62.12px);
   bottom: 92.55px;
+  cursor: pointer;
 }
 
 .aboutUs {
@@ -87,6 +88,7 @@ h3 {
   height: 11.8px;
   left: calc(50% - 39.56px / 2 + 191.23px);
   bottom: 104.34px;
+  cursor: pointer;
 }
 
 .missionAndVision {
@@ -95,6 +97,7 @@ h3 {
   height: 11.8px;
   left: calc(50% - 81.21px / 2 + 212.05px);
   bottom: 92.55px;
+  cursor: pointer;
 }
 
 .community {
@@ -103,6 +106,7 @@ h3 {
   height: 11.8px;
   left: calc(50% - 81.21px / 2 + 212.05px);
   bottom: 80.55px;
+  cursor: pointer;
 }
 .securityAndPrivacy {
   position: absolute;
@@ -110,6 +114,7 @@ h3 {
   height: 11.8px;
   left: calc(50% - 81.21px / 2 + 212.05px);
   bottom: 68px;
+  cursor: pointer;
 }
 
 .termsOfUse {
@@ -118,6 +123,7 @@ h3 {
   height: 11.8px;
   left: calc(50% - 81.21px / 2 + 212.05px);
   bottom: 56px;
+  cursor: pointer;
 }
 
 .contactUs {
@@ -126,6 +132,7 @@ h3 {
   height: 11.8px;
   left: 1136.95px;
   bottom: 104.34px;
+  cursor: pointer;
 }
 
 .shipping {
@@ -134,6 +141,7 @@ h3 {
   height: 11.8px;
   left: 1136.95px;
   bottom: 92.34px;
+  cursor: pointer;
 }
 
 .returns {
@@ -142,6 +150,7 @@ h3 {
   height: 11.8px;
   left: 1136.95px;
   bottom: 80px;
+  cursor: pointer;
 }
 
 /* 
