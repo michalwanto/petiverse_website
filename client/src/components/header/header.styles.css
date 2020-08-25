@@ -1,3 +1,12 @@
+.headerContainer {
+  position: relative;
+  width: 1335px;
+  height: 89px;
+  left: 0px;
+  top: 0px;
+  margin: 0;
+}
+
 .ham {
   position: absolute;
   width: 31.93px;

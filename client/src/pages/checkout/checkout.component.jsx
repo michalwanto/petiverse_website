@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import tickIcon from "../../assets/decor/tickIcon.svg";
 import petiversePackage from "../../assets/decor/petiversePackage.svg";
+import pawPrint from "../../assets/decor/pawprint.svg";
 
 import {
   selectCartItems,
@@ -31,6 +32,7 @@ const CheckoutPage = (cartItems, cartTotal) => {
         ))}
       </div>
       <img className="petiversePackaging" src={petiversePackage}></img>
+      <img className="pawPrint" src={pawPrint}></img>
     </div>
   );
 };

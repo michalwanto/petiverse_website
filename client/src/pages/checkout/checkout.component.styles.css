@@ -5,10 +5,10 @@
 
 .CheckoutPageContainer {
   position: relative;
-
-  height: 1359px;
-
-  background: #fbfbfb;
+  width: 1335px;
+  height: 694px;
+  left: 0px;
+  top: 0px;
 }
 .PaidOrdersContainer {
   position: absolute;
@@ -26,8 +26,8 @@
   position: absolute;
   width: 622.35px;
   height: 39.64px;
-  left: calc(50% - 622.35px / 2 + 7.3px);
-  top: 166.19px;
+  left: calc(50% - 622.35px / 2 + 7.35px);
+  top: 80.19px;
   margin: 0;
 
   font-family: TS Block;

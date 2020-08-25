@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as ShoppingIconSVG } from "../../assets/header/shopping-bag.svg";
 
 export const HeaderContainer = styled.div`
+  position: relative;
   height: 70px;
   width: 100%;
   display: flex;
