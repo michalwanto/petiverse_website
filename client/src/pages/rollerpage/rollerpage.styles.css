@@ -18,8 +18,8 @@ h2 {
   position: absolute;
   width: 242.24px;
   height: 16.66px;
-  left: calc(50% - 242.24px / 2 + 2.43px);
-  top: 201.99px;
+  left: calc(50% - 242.24px / 2 + 2.28px);
+  top: 99.99px;
 
   font-family: Bahnschrift;
   font-size: 13.8822px;
@@ -31,30 +31,37 @@ h2 {
 
 .rollerPage {
   position: relative;
-  width: 1350.69px;
-  height: 2321.11px;
+
+  height: 2024px;
+  left: 0px;
+  top: 0;
+  margin-right: 0;
 }
 
 .rollerTitle {
   position: absolute;
   width: 382.46px;
   height: 55.53px;
-  left: 469.91px;
-  top: 130.32px;
+  left: calc(50% - 382.46px / 2 - 5.36px);
+  top: 49.32px;
+  margin: 0;
 
   font-family: TS Block;
   font-style: normal;
   font-weight: bold;
   font-size: 48.5878px;
   line-height: 56px;
+  /* identical to box height */
+
+  color: #000000;
 }
 
 .seeHowItWorks {
   position: absolute;
   width: 751.03px;
   height: 55.53px;
-  left: calc(50% - 751.03px / 2 + 19.44px);
-  bottom: 560px;
+  left: 315px;
+  bottom: 425.47px;
 
   font-family: TS Block;
   font-style: normal;
@@ -72,71 +79,63 @@ h2 {
   position: absolute;
   width: 410.91px;
   height: 504.76px;
-  left: calc(50% - 410.91px / 2 - 78.43px);
-  top: 343.86px;
+  left: calc(50% - 410.91px / 2 - 78.59px);
+  top: 241.86px;
 }
 
 .front_pink_big {
   position: absolute;
   width: 111.06px;
   height: 508.78px;
-  left: calc(50% - 111.06px / 2 - 4.86px);
-  top: 313.75px;
+  left: calc(50% - 111.06px / 2 - 5.01px);
+  top: 211.75px;
 }
 
 .highlights_top_blue {
   position: absolute;
   width: 403.28px;
   height: 397.03px;
-  left: calc(50% - 403.28px / 2 - 432.08px);
-  top: calc(50% - 397.03px / 2 - 9.25px);
+  left: calc(50% - 403.28px / 2 - 432.24px);
+  top: calc(50% - 397.03px / 2 + 10.52px);
 }
 
 .highlights_spin_pink {
   position: absolute;
   width: 403.97px;
   height: 400.5px;
-  left: calc(50% - 403.97px / 2 - 4.16px);
-  top: 952.79px;
+  left: calc(50% - 403.97px / 2 - 4.51px);
+  top: 822px;
 }
 
 .highlights_pull_blue {
   position: absolute;
   width: 411.61px;
   height: 397.03px;
-  left: calc(50% - 411.61px / 2 + 427.92px);
-  top: calc(50% - 397.03px / 2 - 5.78px);
+  left: calc(50% - 411.61px / 2 + 427.3px);
+  top: calc(50% - 397.03px / 2 + 10.52px);
 }
 .sofa {
   position: absolute;
   width: 762.13px;
   height: 410.22px;
-  left: calc(50% - 762.13px / 2 - 38.18px);
-  bottom: 234.14px;
+  left: calc(50% - 762.13px / 2 - 38.33px);
+  bottom: 88.04px;
 }
 
 .desc1 {
   position: absolute;
   width: 535.85px;
   height: 73.58px;
-  left: calc(50% - 535.85px / 2 - 365.8px);
-  top: 1381.05px;
-}
-
-.desc2 {
-  position: absolute;
-  width: 535.85px;
-  height: 73.58px;
-  left: calc(50% - 535.85px / 2 + 105.5px);
-  top: 1381.05px;
+  left: calc(50% - 535.85px / 2 - 365.95px);
+  top: 1279.05px;
 }
 
 .dragrollblue {
   position: absolute;
   width: 24.99px;
   height: 110.36px;
-  left: calc(50% - 24.99px / 2 - 446.31px);
-  bottom: 577.73px;
+  left: calc(50% - 24.99px / 2 - 446.47px);
+  bottom: 431.62px;
 
   border-top-style: hidden;
   border-right-style: hidden;
@@ -148,8 +147,8 @@ h2 {
   position: absolute;
   width: 24.99px;
   height: 110.36px;
-  left: calc(50% - 24.99px / 2 - 400.5px);
-  bottom: 577.73px;
+  left: calc(50% - 24.99px / 2 - 400.66px);
+  bottom: 431.62px;
 
   border-top-style: hidden;
   border-right-style: hidden;
@@ -164,7 +163,7 @@ h2 {
   width: 35.4px;
   height: 47.89px;
   left: 61.08px;
-  top: 422.02px;
+  top: 320.02px;
 }
 
 .addToCartLong {
@@ -179,16 +178,16 @@ h2 {
   position: absolute;
   width: 56.92px;
   height: 75.66px;
-  right: 83.99px;
-  bottom: 486.57px;
+  right: 84.29px;
+  bottom: 286.34px;
 }
 
 .inStock {
   position: absolute;
   width: 106px;
   height: 17px;
-  left: calc(50% - 106px / 2 + 20.65px);
-  top: 230px;
+  left: calc(50% - 106px / 2 + 20.5px);
+  top: 135px;
 }
 
 .likeIcon {
@@ -196,29 +195,27 @@ h2 {
   width: 32.62px;
   height: 32.62px;
   left: 962.73px;
-  top: 530.99px;
+  top: calc(50% - 29.15px / 2 - 610px);
 }
 .paymentDesc {
   position: absolute;
   width: 342.2px;
   height: 79.82px;
   left: 957.87px;
-  top: 426.88px;
+  top: calc(50% - 29.15px / 2 - 710px);
 }
 
 .dog {
   position: absolute;
   width: 272.93px;
   height: 438px;
-  right: 0px;
-  top: 1187px;
+  right: 0;
+  top: calc(50% - 438px / 2 + 243px);
 }
 .dragme {
   position: absolute;
-  width: 134px;
-  height: 31.23px;
-  left: calc(50% - 24.99px / 2 - 360px);
-  top: 1633px;
+  left: 315.16px;
+  bottom: 525.34px;
 }
 .ellipseblue {
   position: absolute;
@@ -232,13 +229,13 @@ h2 {
   width: 882.34px;
   height: 851.91px;
   right: 0;
-  top: 1473.37px;
+  bottom: -150.28px;
 }
 .sayings {
   position: absolute;
   width: 250;
   height: 150px;
-  right: 170.17px;
+  right: 180.17px;
   top: calc(50% - 80.52px / 2 + 240.05px);
 }
 
@@ -246,30 +243,30 @@ h2 {
   position: absolute;
   width: 619.49px;
   height: 297.77px;
-  right: 0px;
-  top: 1943.76px;
+  left: calc(50% - 619.49px / 2 + 350px);
+  bottom: -63.77px;
 }
 .fur1 {
   position: absolute;
   width: 70.11px;
   height: 145.76px;
-  left: calc(50% - 70.11px / 2 + 264.11px);
-  bottom: 375.05px;
+  left: calc(50% - 70.11px / 2 + 270.95px);
+  bottom: 196.94px;
 }
 .fur2 {
   position: absolute;
   width: 112.45px;
   height: 138.13px;
-  left: calc(50% - 112.45px / 2 - 177.69px);
-  bottom: 439.6px;
+  left: calc(50% - 112.45px / 2 - 154.28px);
+  bottom: 292.87px;
 }
 
 .backButton2 {
   position: absolute;
   width: 52.06px;
   height: 64.55px;
-  left: 43.03px;
-  bottom: 482.41px;
+  left: 43.04px;
+  top: 1668px;
 }
 
 /* <img className="dog" src={dog} />

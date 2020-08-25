@@ -1,3 +1,8 @@
+@font-face {
+  font-family: FreightBigProBook-Regular;
+  src: "../../assets/fonts/FreightBigBook.ttf";
+}
+
 .CheckoutPageContainer {
   position: relative;
 
@@ -9,7 +14,7 @@
   position: absolute;
   width: 236px;
   height: 212px;
-  left: 978px;
+  left: calc(50% - 164.11px / 2 + 130.57px);
   top: 296px;
 }
 .itemImg {
@@ -63,10 +68,83 @@
   top: 173.15px;
 }
 
-.petiversePackage {
+.petiversePackaging {
   position: absolute;
   width: 619.57px;
   height: 634.87px;
   right: -104.3px;
   bottom: -27.12px;
+}
+
+.referenceNumberTitle {
+  position: absolute;
+
+  height: 15.3px;
+  left: calc(50% - 153.68px / 2 - 280.58px);
+  top: 282.32px;
+  margin: 0;
+
+  font-family: FreightBigProBook-Regular;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 13.9073px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+
+  color: #958e8e;
+}
+
+.referenceNumber {
+  position: absolute;
+  width: 274.67px;
+  height: 58.41px;
+  left: calc(50% - 274.67px / 2 - 222.86px);
+  top: 300.4px;
+  margin: 0;
+
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48.6755px;
+  line-height: 58px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+.referenceAddress {
+  position: absolute;
+  width: 236.42px;
+  height: 116.82px;
+  left: 310.13px;
+  top: 372.72px;
+
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.9073px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+.continueShoppingBtn {
+  position: absolute;
+  height: 15.99px;
+  left: 307.35px;
+  top: 699.54px;
+  border: none;
+
+  font-family: TS Block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13.9073px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #6f6f6f;
 }

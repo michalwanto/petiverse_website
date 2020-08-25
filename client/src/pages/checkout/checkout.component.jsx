@@ -17,13 +17,20 @@ const CheckoutPage = (cartItems, cartTotal) => {
       <h2 className="confirmSubtitle">
         We also sent you an email of your receipt
       </h2>
+      <h4 className="referenceNumberTitle">REFERENCE NUMBER</h4>
+      <h3 className="referenceNumber">0984923732</h3>
+      <h5 className="referenceAddress">
+        Larry Denise Kingdom of Narnia, Beyond The Wardrobe, CSL 1234 098754321
+        iamlarrydeniseyeah@gmail.com
+      </h5>
+      <button className="continueShoppingBtn">CONTINUE SHOPPING</button>
       <img className="confirmTickIcon" src={tickIcon}></img>
       <div className="PaidOrdersContainer">
         {cartItems.cartItems.map((item) => (
           <img className="itemImg" src={item.imageUrl}></img>
         ))}
       </div>
-      <img className="petiversePackage" src={petiversePackage}></img>
+      <img className="petiversePackaging" src={petiversePackage}></img>
     </div>
   );
 };

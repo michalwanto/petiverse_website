@@ -28,6 +28,7 @@ const App = ({ checkCurrentUser, currentUser }) => {
 
   return (
     <div>
+      {window.location.pathname === "/admin" ? null : <Header />}
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/shop" component={ShopPage} />
@@ -45,7 +46,7 @@ const App = ({ checkCurrentUser, currentUser }) => {
         <Route path="/successPage" component={SuccessPage} />
         <Route path="/checkout" component={CheckoutPage} />
       </Switch>
-      {window.location.pathname === "/admin" ? null : <Header />}
+
       {window.location.pathname === "/admin" ? null : <Footer />}
     </div>
   );
