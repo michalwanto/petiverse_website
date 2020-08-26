@@ -10,6 +10,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
+import { HamburgerTitle, SubOptionsContainer } from "./drawer.styles";
 
 const useStyles = makeStyles({
   list: {
@@ -25,6 +26,8 @@ export default function TemporaryDrawer({ children }) {
   const [state, setState] = React.useState({
     left: false,
   });
+  const [toggleFurniture, setToggleFurnitureTo] = React.useState(false);
+  const [toggleClothing, setToggleClothingTo] = React.useState(false);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -43,29 +46,62 @@ export default function TemporaryDrawer({ children }) {
         [classes.fullList]: anchor === "top" || anchor === "bottom",
       })}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        <HamburgerTitle>SHOP CHARACTER</HamburgerTitle>
+        {["Wednesday", "Vannellopee", "Sullivan", "Barrymore"].map(
+          (text, index) => (
+            <SubOptionsContainer>
+              <ListItem button key={text}>
+                <ListItemText primary={text} />
+              </ListItem>
+            </SubOptionsContainer>
+          )
+        )}
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
+        <HamburgerTitle>SHOP COLLECTION</HamburgerTitle>
+        <SubOptionsContainer>
+          <ListItem
+            onClick={() => setToggleFurnitureTo(!toggleFurniture)}
+            style={{ cursor: "pointer" }}
+          >
+            Furniture
           </ListItem>
-        ))}
+          {toggleFurniture && (
+            <SubOptionsContainer>
+              <ListItem>Pet Beds</ListItem>
+              <ListItem>Pet Sofas</ListItem>
+            </SubOptionsContainer>
+          )}
+
+          <ListItem
+            onClick={() => setToggleClothingTo(!toggleClothing)}
+            style={{ cursor: "pointer" }}
+          >
+            Clothing
+          </ListItem>
+          {toggleClothing && (
+            <SubOptionsContainer>
+              <ListItem>Jackets</ListItem>
+              <ListItem>Shirts</ListItem>
+              <ListItem>Dresses</ListItem>
+              <ListItem>Dresses</ListItem>
+            </SubOptionsContainer>
+          )}
+          <ListItem>Feeding</ListItem>
+          <ListItem>Cleaning</ListItem>
+          <ListItem>Costumes & Leisure</ListItem>
+        </SubOptionsContainer>
+      </List>
+      <Divider />
+      <List>
+        <HamburgerTitle>PESTIMONIALS</HamburgerTitle>
+        <SubOptionsContainer>
+          <ListItem>Pestimonials</ListItem>
+        </SubOptionsContainer>
       </List>
     </div>
   );

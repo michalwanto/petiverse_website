@@ -9,22 +9,6 @@
   src: url("../../assets/fonts/BAHNSCHRIFT.TTF");
 }
 
-h1 {
-  font-family: TS Block;
-  position: absolute;
-}
-
-h2 {
-  position: absolute;
-
-  font-family: Bahnschrift;
-  font-size: 13.8822px;
-  line-height: 16px;
-  /* identical to box height */
-
-  letter-spacing: 0.1em;
-}
-
 .rollerPage {
   position: relative;
 
@@ -35,6 +19,8 @@ h2 {
 }
 
 .rollerTitle {
+  font-family: TS Block;
+  position: absolute;
   position: absolute;
   width: 382.46px;
   height: 55.53px;
@@ -53,6 +39,14 @@ h2 {
 }
 
 .rollerSubtitle {
+  position: absolute;
+
+  font-family: Bahnschrift;
+  font-size: 13.8822px;
+  line-height: 16px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
   width: 242.24px;
   height: 16.66px;
   left: calc(50% - 242.24px / 2 + 2.28px);
