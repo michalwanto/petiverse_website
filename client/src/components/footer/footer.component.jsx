@@ -1,6 +1,9 @@
 import React from "react";
 import "./footer.styles.css";
 
+import { FooterLogo } from "./footer.styles";
+import footerLogo from "../../assets/footer/logoFooter.svg";
+
 const Footer = () => {
   return (
     <div className="footerContainer">
@@ -11,6 +14,8 @@ const Footer = () => {
         type="textInput"
         placeholder="Email"
       ></input>
+      <FooterLogo src={footerLogo}></FooterLogo>
+
       <h3 className="instagram">Instagram</h3>
       <h3 className="facebook">Facebook</h3>
 
