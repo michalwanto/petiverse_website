@@ -5,12 +5,14 @@ import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
-import ListItem from "@material-ui/core/ListItem";
+
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
-import { HamburgerTitle, SubOptionsContainer } from "./drawer.styles";
+import { HamburgerTitle, SubOptionsContainer, ListItem } from "./drawer.styles";
+
+import "./drawer.styles.css";
 
 const useStyles = makeStyles({
   list: {
@@ -64,10 +66,7 @@ export default function TemporaryDrawer({ children }) {
       <List>
         <HamburgerTitle>SHOP COLLECTION</HamburgerTitle>
         <SubOptionsContainer>
-          <ListItem
-            onClick={() => setToggleFurnitureTo(!toggleFurniture)}
-            style={{ cursor: "pointer" }}
-          >
+          <ListItem onClick={() => setToggleFurnitureTo(!toggleFurniture)}>
             Furniture
           </ListItem>
           {toggleFurniture && (
@@ -77,10 +76,7 @@ export default function TemporaryDrawer({ children }) {
             </SubOptionsContainer>
           )}
 
-          <ListItem
-            onClick={() => setToggleClothingTo(!toggleClothing)}
-            style={{ cursor: "pointer" }}
-          >
+          <ListItem onClick={() => setToggleClothingTo(!toggleClothing)}>
             Clothing
           </ListItem>
           {toggleClothing && (
@@ -88,12 +84,11 @@ export default function TemporaryDrawer({ children }) {
               <ListItem>Jackets</ListItem>
               <ListItem>Shirts</ListItem>
               <ListItem>Dresses</ListItem>
-              <ListItem>Dresses</ListItem>
+              <ListItem>Costumes & Leisure</ListItem>
             </SubOptionsContainer>
           )}
           <ListItem>Feeding</ListItem>
           <ListItem>Cleaning</ListItem>
-          <ListItem>Costumes & Leisure</ListItem>
         </SubOptionsContainer>
       </List>
       <Divider />

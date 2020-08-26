@@ -208,7 +208,7 @@
   position: absolute;
   width: 32.62px;
   height: 32.62px;
-  left: 962.73px;
+  right: 25.5%;
   top: calc(50% - 29.15px / 2 - 595px);
   cursor: pointer;
 }
@@ -216,7 +216,7 @@
   position: absolute;
   width: 342.2px;
   height: 79.82px;
-  left: 957.87px;
+  right: 2.86%;
   top: calc(50% - 29.15px / 2 - 710px);
 }
 
@@ -237,7 +237,8 @@
   width: 882.34px;
   height: 851.91px;
   left: -524.18px;
-  top: calc(50% - 851.91px / 2 - 131.88px);
+  top: 40.71%;
+  bottom: 39.67%;
 }
 .ellipsepink {
   position: absolute;
@@ -258,7 +259,7 @@
   position: absolute;
   width: 619.49px;
   height: 297.77px;
-  left: calc(50% - 619.49px / 2 + 350px);
+  right: 2.86%;
   bottom: -63.77px;
 }
 .fur1 {
