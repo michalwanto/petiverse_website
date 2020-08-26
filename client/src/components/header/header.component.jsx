@@ -19,6 +19,8 @@ import ham from "../../assets/header/ham.svg";
 import delivery from "../../assets/header/delivery.svg";
 import cart from "../../assets/header/cart.svg";
 
+import TemporaryDrawer from "../../components/drawer/drawer.component";
+
 import "./header.styles.css";
 
 const Header = ({
@@ -29,9 +31,10 @@ const Header = ({
   fetchCartItemsFromFirestoreStart,
 }) => (
   <HeaderContainer>
-    <LinkContainer to="/">
+    <TemporaryDrawer>
       <img src={ham} className="ham" />
-    </LinkContainer>
+    </TemporaryDrawer>
+
     <LinkContainer to="/">
       <img src={logo} className="logo" />
     </LinkContainer>

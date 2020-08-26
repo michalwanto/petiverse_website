@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import CollapsibleTable from "../../components/custom-table/custom-table.component";
 import { fetchOrdersFromFirestoreStart } from "../../redux/admin/admin.actions";
 
+import { AdminPageContainer } from "./admin.styles";
+
 const AdminPage = ({ fetchOrdersFromFirestoreStart }) => {
   useEffect(() => {
     fetchOrdersFromFirestoreStart();
