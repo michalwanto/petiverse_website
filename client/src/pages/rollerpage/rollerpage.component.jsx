@@ -32,6 +32,9 @@ const RollerPage = () => {
     Draggable.create(".draggable");
   });
 
+  useEffect(() => {
+    gsap.to("img", 1, { opacity: 1, y: 10, rotation: 360 });
+  });
   return (
     <div className="rollerPage">
       <h1 className="rollerTitle">FUR AWAY</h1>
