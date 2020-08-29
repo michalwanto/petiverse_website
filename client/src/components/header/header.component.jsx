@@ -39,7 +39,7 @@ const Header = ({
       <img src={logo} className="logo" />
     </LinkContainer>
 
-    <LinkContainer to="/">
+    <LinkContainer to="/roller">
       <img src={delivery} className="delivery" />
     </LinkContainer>
 

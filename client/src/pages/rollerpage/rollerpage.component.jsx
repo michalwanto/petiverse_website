@@ -31,6 +31,7 @@ const RollerPage = () => {
   useEffect(() => {
     Draggable.create(".draggable");
   });
+
   return (
     <div className="rollerPage">
       <h1 className="rollerTitle">FUR AWAY</h1>
@@ -38,7 +39,7 @@ const RollerPage = () => {
       <h1 className="rollerPrice">AUD 17</h1>
       <h1 className="seeHowItWorks">SEE HOW IT WORKS</h1>
       <MinusSign src={minus} />
-      <Quantity>1</Quantity>
+      <Quantity className="Quantity">1</Quantity>
       <PlusSign src={plus} />
 
       <img className="ellipseblue" src={ellipseblue} />

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { gsap } from "gsap";
 
 export const MinusSign = styled.img`
   position: absolute;
@@ -30,6 +31,7 @@ export const Quantity = styled.h2`
   height: 16.66px;
   right: 338px;
   top: 350px;
+  opacity: 0;
 
   font-family: Bahnschrift;
   font-style: normal;
