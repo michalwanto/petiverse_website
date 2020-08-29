@@ -88,7 +88,7 @@ const RollerPage = () => {
       <img
         className="sofa"
         src={
-          "https://firebasestorage.googleapis.com/v0/b/petiverse-f7288.appspot.com/o/shop%2Fcollection%2Fcleaning%20%2Frollers%2Fdraggable%2Fsofa.svg?alt=media&token=82d4e703-ccc7-48c1-9c60-7b756704d9f0"
+          "https://firebasestorage.googleapis.com/v0/b/petiverse-f7288.appspot.com/o/shop%2Fcollection%2Fcleaning%20%2Frollers%2Fdraggable%2Ffront_sofa.webp?alt=media&token=5b4d4b39-4f22-4aa9-90a8-fa756ca0a441"
         }
       />
       <img
