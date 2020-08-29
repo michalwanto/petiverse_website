@@ -21,7 +21,7 @@ import cart from "../../assets/header/cart.svg";
 
 import TemporaryDrawer from "../../components/drawer/drawer.component";
 
-import "./header.styles.css";
+import "./header.styles.scss";
 
 const Header = ({
   currentUser,
