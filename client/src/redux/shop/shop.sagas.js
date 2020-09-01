@@ -11,12 +11,28 @@ import {
 
 import shopActionTypes from "./shop.types";
 
-export function* fetchCollectionsAsync() {
+export function* fetchCollectionsAsync(category) {
+  let id = "";
+  switch (category.payload.category) {
+    case "shirt":
+      id = "1ISQtx97dSVjiYR472dy";
+      break;
+    case "costumes":
+      id = "KW745JXq2Ul4RaXyNbxf";
+      break;
+    case "dresses":
+      id = "X6zUVXBtRDGVYUiOzYLG";
+      break;
+    case "jackets":
+      id = "1g51AWLJBrnf5Mq4s6cRv";
+      break;
+  }
+
   try {
-    const collectionRef = firestore.collection("collections");
+    const collectionRef = yield firestore.doc(`shop/collection/clothing/${id}`);
     const snapshot = yield collectionRef.get();
-    const collectionMap = yield call(convertCollectionsSnapshotToMap, snapshot);
-    yield put(fetchCollectionsSuccess(collectionMap));
+    const shirtItems = yield snapshot.data();
+    yield put(fetchCollectionsSuccess(shirtItems));
   } catch (error) {
     yield put(fetchCollectionsFailure(error.message));
   }

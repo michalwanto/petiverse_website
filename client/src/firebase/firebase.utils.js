@@ -54,23 +54,9 @@ export const addCollectionAndDocuments = async (
   return await batch.commit();
 };
 
-export const convertCollectionsSnapshotToMap = (collections) => {
-  const transformedCollection = collections.docs.map((doc) => {
-    const { items, title } = doc.data();
-
-    return {
-      routeName: encodeURI(title.toLowerCase()),
-      id: doc.id,
-      title,
-      items,
-    };
-  });
-
-  return transformedCollection.reduce((accumulator, collection) => {
-    accumulator[collection.title.toLowerCase()] = collection;
-    return accumulator;
-  }, {});
-};
+// export const pushToCollections = (collections) => {
+//   return console.log(collections.title);
+// };
 
 export const convertTokenDataToDataArray = (data) => {
   const unixTime = new Date(data.token.created * 1000);

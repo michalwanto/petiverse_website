@@ -54,7 +54,7 @@ export default function TemporaryDrawer({ children }) {
         <HamburgerTitle>SHOP CHARACTER</HamburgerTitle>
         {["Wednesday", "Vannellopee", "Sullivan", "Barrymore"].map(
           (text, index) => (
-            <SubOptionsContainer>
+            <SubOptionsContainer key={Math.random}>
               <ListItem button key={text}>
                 <ListItemText primary={text} />
               </ListItem>

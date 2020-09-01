@@ -1,0 +1,25 @@
+.collectionPageTitle {
+  font-size: 35px;
+}
+
+.itemsContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .itemContainer {
+    justify-self: center;
+    .imgContainer {
+      height: 300px;
+      width: 200px;
+
+      .img {
+        height: 80%;
+      }
+    }
+  }
+}
+
+.price {
+  font-size: 20px;
+  color: grey;
+}

@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 
 import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
-import CollectionPageContainer from "../../pages/collection/collection.container";
+import CollectionPageContainer from "../../pages/collection1/collection1.container";
 
 import { selectIsCollectionsLoaded } from "../../redux/shop/shop.selectors";
 
