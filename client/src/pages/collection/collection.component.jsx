@@ -29,12 +29,12 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
               />
             </div>
 
-            <div>
+            <div className="descriptionContainer">
               <h2 className="itemName">{item.name}</h2>
-              <h4 className="itemDescription">Short Desc</h4>
-              <h3 className="itemPrice">PRICE</h3>
+              <h4 className="itemDescription">{item.shortDesc}</h4>
+              <h3 className="itemPrice">AUD 77</h3>
+              <div className="itemSize"> XS S M L</div>
             </div>
-            <div className="itemSize"> XS S M L</div>
           </div>
         ))}
       </div>

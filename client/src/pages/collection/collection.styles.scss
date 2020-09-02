@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Menlo;
+  src: "../../assets/fonts/Menlo-Regular.ttf";
+}
+
 .collectionPageTitle {
   font-size: 35px;
   position: relative;
@@ -18,16 +23,19 @@
     row-gap: 50px;
 
     .itemContainer {
+      display: flex;
+      flex-direction: column;
+      position: relative;
       width: 284px;
       height: 512px;
-      left: 250px;
-      top: 317px;
 
       .imgContainer {
+        position: absolute;
         display: flex;
         align-items: center;
-        width: 284px;
-        height: 272px;
+        justify-content: center;
+        width: 285.67px;
+        height: 409.57px;
 
         .img {
           max-width: 100%;
@@ -35,18 +43,67 @@
         }
       }
 
-      .itemName {
-        margin: 0;
-      }
-      .itemDescription {
-        margin: 0;
-      }
-      .itemPrice {
-        margin: 0;
-        font-size: 20px;
-      }
-      .itemSize {
-        margin: 0;
+      .descriptionContainer {
+        position: absolute;
+
+        width: 286px;
+        height: 119px;
+        left: -2px;
+        top: 411px;
+
+        .itemName {
+          margin: 0;
+          position: absolute;
+          width: 140px;
+          height: 15px;
+          left: 2px;
+          top: 16px;
+
+          font-family: Nimbus Sans Extd;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .itemDescription {
+          margin: 0;
+          position: absolute;
+          width: 160px;
+          height: 14px;
+          left: 4px;
+          bottom: 64px;
+
+          font-family: Menlo;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+        }
+        .itemPrice {
+          margin: 0;
+          position: absolute;
+          left: 74.48%;
+          right: 0%;
+          top: 10.92%;
+          bottom: 73.11%;
+
+          font-family: Menlo;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 23px;
+          text-align: center;
+
+          color: black;
+        }
+        .itemSize {
+          margin: 0;
+          position: absolute;
+          left: 1.27%;
+          right: 12.45%;
+          top: 58.03%;
+          bottom: 11.72%;
+        }
       }
     }
   }
