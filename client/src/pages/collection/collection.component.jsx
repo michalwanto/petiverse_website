@@ -15,8 +15,9 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
   }, []);
 
   return (
-    <div>
+    <div className="collectionPage">
       <h1 className="collectionPageTitle">Collection Page</h1>
+
       {console.log(collections)}
       <div className="itemsContainer">
         {collections.map((item) => (
@@ -29,11 +30,11 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
             </div>
 
             <div>
-              <h2>{item.name}</h2>
-              <h4>Short Desc</h4>
-              <h3 className="price">PRICE</h3>
+              <h2 className="itemName">{item.name}</h2>
+              <h4 className="itemDescription">Short Desc</h4>
+              <h3 className="itemPrice">PRICE</h3>
             </div>
-            <div> XS S M L</div>
+            <div className="itemSize"> XS S M L</div>
           </div>
         ))}
       </div>
