@@ -4,7 +4,6 @@ import { createStructuredSelector } from "reselect";
 
 import "./collection.styles.scss";
 
-import { convertCollectionsToMap } from "../../firebase/firebase.utils";
 import { selectCollections } from "../../redux/shop/shop.selectors";
 import { fetchCollectionsStart } from "../../redux/shop/shop.actions";
 
@@ -16,12 +15,18 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
 
   return (
     <div className="collectionPage">
-      <h1 className="collectionPageTitle">Collection Page</h1>
+      <h1 className="collectionPageTitle">All Products</h1>
+      <h2 className="collectionPageSubTitle">
+        YOUR PET’S PERSONALITIES REPRESENTED.
+      </h2>
 
       {console.log(collections)}
       <div className="itemsContainer">
         {collections.map((item) => (
           <div className="itemContainer">
+            {item.stock.map((eachStock) => {
+              console.log(eachStock);
+            })}
             <div className="imgContainer">
               <img
                 className="img"
@@ -30,7 +35,7 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
             </div>
 
             <div className="descriptionContainer">
-              <h2 className="itemName">{item.name}</h2>
+              <h2 className="itemName">{`${item.name}`.toUpperCase()}</h2>
               <h4 className="itemDescription">{item.shortDesc}</h4>
               <h3 className="itemPrice">AUD 77</h3>
               <div className="itemSize"> XS S M L</div>

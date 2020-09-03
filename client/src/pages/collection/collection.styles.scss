@@ -4,8 +4,35 @@
 }
 
 .collectionPageTitle {
-  font-size: 35px;
   position: relative;
+  margin-top: 70px;
+  margin-bottom: 0;
+  width: 856px;
+  height: 80px;
+
+  font-family: TS Block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 80px;
+
+  color: #000000;
+}
+
+.collectionPageSubTitle {
+  width: 558px;
+  height: 29px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  font-family: Menlo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
 }
 
 .collectionPage {
@@ -59,7 +86,7 @@
           left: 2px;
           top: 16px;
 
-          font-family: Nimbus Sans Extd;
+          font-family: nimbus-sans-extended, sans-serif;
           font-style: normal;
           font-weight: 900;
           font-size: 20px;
