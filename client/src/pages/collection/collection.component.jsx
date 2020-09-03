@@ -30,8 +30,11 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
                   stockArray.push(eachSize)
                 );
               })}
-              {(uniqueStockArray = [...new Set(stockArray)])}
-              {console.log(uniqueStockArray)}
+              {stockArray.forEach((c) => {
+                if (!uniqueStockArray.includes(c)) {
+                  uniqueStockArray.push(c);
+                }
+              })}
 
               <div className="imgContainer">
                 <img
