@@ -123,13 +123,24 @@
 
           color: black;
         }
-        .itemSize {
-          margin: 0;
+
+        .itemSizeBoxesContainer {
           position: absolute;
-          left: 1.27%;
-          right: 12.45%;
-          top: 58.03%;
-          bottom: 11.72%;
+          display: flex;
+          flex-direction: row;
+          top: 65px;
+          .itemSizeBox {
+            margin: 3px;
+            height: 30px;
+            width: 30px;
+            border-style: solid;
+            justify-content: center;
+            align-content: center;
+            .itemSize {
+              color: black;
+              text-align: center;
+            }
+          }
         }
       }
     }

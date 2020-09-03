@@ -19,29 +19,42 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
       <h2 className="collectionPageSubTitle">
         YOUR PET’S PERSONALITIES REPRESENTED.
       </h2>
-
-      {console.log(collections)}
       <div className="itemsContainer">
-        {collections.map((item) => (
-          <div className="itemContainer">
-            {item.stock.map((eachStock) => {
-              console.log(eachStock);
-            })}
-            <div className="imgContainer">
-              <img
-                className="img"
-                src={`${item.imageUrl[0].noBackground[0]}`}
-              />
-            </div>
+        {collections.map((item) => {
+          let stockArray = [];
+          let uniqueStockArray = [];
+          return (
+            <div className="itemContainer">
+              {item.stock.map((eachStock) => {
+                Object.keys(eachStock.size).map((eachSize) =>
+                  stockArray.push(eachSize)
+                );
+              })}
+              {(uniqueStockArray = [...new Set(stockArray)])}
+              {console.log(uniqueStockArray)}
 
-            <div className="descriptionContainer">
-              <h2 className="itemName">{`${item.name}`.toUpperCase()}</h2>
-              <h4 className="itemDescription">{item.shortDesc}</h4>
-              <h3 className="itemPrice">AUD 77</h3>
-              <div className="itemSize"> XS S M L</div>
+              <div className="imgContainer">
+                <img
+                  className="img"
+                  src={`${item.imageUrl[0].noBackground[0]}`}
+                />
+              </div>
+
+              <div className="descriptionContainer">
+                <h2 className="itemName">{`${item.name}`.toUpperCase()}</h2>
+                <h4 className="itemDescription">{item.shortDesc}</h4>
+                <h3 className="itemPrice">AUD 77</h3>
+                <div className="itemSizeBoxesContainer">
+                  {uniqueStockArray.map((eachStock) => (
+                    <div className="itemSizeBox">
+                      <h3 className="itemSize">{eachStock}</h3>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );
