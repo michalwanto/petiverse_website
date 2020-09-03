@@ -37,6 +37,7 @@
 
 .collectionPage {
   display: flex;
+  margin-bottom: 120px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -134,6 +135,7 @@
             height: 30px;
             width: 30px;
             border-style: solid;
+            border-width: 0.5px;
             justify-content: center;
             align-items: center;
             .itemSize {
