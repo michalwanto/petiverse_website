@@ -56,7 +56,7 @@ export default function TemporaryDrawer({ children }) {
           (text, index) => (
             <SubOptionsContainer key={Math.random}>
               <ListItem button key={text}>
-                <ListItemText primary={text} />
+                {text}
               </ListItem>
             </SubOptionsContainer>
           )
@@ -64,7 +64,7 @@ export default function TemporaryDrawer({ children }) {
       </List>
       <Divider />
       <List>
-        <HamburgerTitle>SHOP COLLECTION</HamburgerTitle>
+        <HamburgerTitle to="/collection">SHOP COLLECTION</HamburgerTitle>
         <SubOptionsContainer>
           <ListItem onClick={() => setToggleFurnitureTo(!toggleFurniture)}>
             Furniture
