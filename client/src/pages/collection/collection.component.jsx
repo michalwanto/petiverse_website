@@ -50,7 +50,7 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
                 <div className="itemSizeBoxesContainer">
                   {uniqueStockArray.map((eachStock) => (
                     <div className="itemSizeBox">
-                      <h3 className="itemSize">{eachStock}</h3>
+                      <h3 className="itemSize">{eachStock.toUpperCase()}</h3>
                     </div>
                   ))}
                 </div>

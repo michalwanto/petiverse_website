@@ -95,7 +95,6 @@
         .itemDescription {
           margin: 0;
           position: absolute;
-          width: 160px;
           height: 14px;
           left: 4px;
           bottom: 64px;
@@ -130,15 +129,17 @@
           flex-direction: row;
           top: 65px;
           .itemSizeBox {
+            display: flex;
             margin: 3px;
             height: 30px;
             width: 30px;
             border-style: solid;
             justify-content: center;
-            align-content: center;
+            align-items: center;
             .itemSize {
               color: black;
               text-align: center;
+              margin: 0;
             }
           }
         }
