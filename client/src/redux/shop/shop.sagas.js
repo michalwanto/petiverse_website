@@ -15,21 +15,27 @@ export function* fetchCollectionsAsync(category) {
   let id = "";
   switch (category.payload.category) {
     case "shirt":
-      id = "1ISQtx97dSVjiYR472dy";
+      id = "clothing/1ISQtx97dSVjiYR472dy";
       break;
     case "costumes":
-      id = "KW745JXq2Ul4RaXyNbxf";
+      id = "clothing/KW745JXq2Ul4RaXyNbxf";
       break;
     case "dresses":
-      id = "X6zUVXBtRDGVYUiOzYLG";
+      id = "clothing/X6zUVXBtRDGVYUiOzYLG";
       break;
     case "jackets":
-      id = "1g51AWLJBrnf5Mq4s6cRv";
+      id = "clothing/1g51AWLJBrnf5Mq4s6cRv";
+      break;
+    case "sofas":
+      id = "furniture/QQlsxpINzTo3M83mhJYp";
+      break;
+    case "beds":
+      id = "furniture/beds";
       break;
   }
 
   try {
-    const collectionRef = yield firestore.doc(`shop/collection/clothing/${id}`);
+    const collectionRef = yield firestore.doc(`shop/collection/${id}`);
     const snapshot = yield collectionRef.get();
     const shirtItems = yield snapshot.data();
     yield put(fetchCollectionsSuccess(shirtItems));

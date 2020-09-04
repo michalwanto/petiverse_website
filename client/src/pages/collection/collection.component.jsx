@@ -11,6 +11,7 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
   useEffect(() => {
     fetchCollectionsStart({ category: "shirt" });
     fetchCollectionsStart({ category: "costumes" });
+    fetchCollectionsStart({ category: "sofas" });
   }, []);
 
   return (
@@ -25,11 +26,13 @@ const CollectionPage = ({ collections, fetchCollectionsStart }) => {
           let uniqueStockArray = [];
           return (
             <div className="itemContainer">
-              {item.stock.map((eachStock) => {
-                Object.keys(eachStock.size).map((eachSize) =>
-                  stockArray.push(eachSize)
-                );
-              })}
+              {item.stock
+                ? item.stock.map((eachStock) => {
+                    Object.keys(eachStock.size).map((eachSize) =>
+                      stockArray.push(eachSize)
+                    );
+                  })
+                : null}
               {stockArray.forEach((c) => {
                 if (!uniqueStockArray.includes(c)) {
                   uniqueStockArray.push(c);
